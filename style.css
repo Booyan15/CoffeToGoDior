@@ -1,0 +1,109 @@
+/* General container styling */
+.container {
+    max-width: 600px; /* Limit the width of the container */
+    margin: auto; /* Center the container */
+    padding: 15px; /* Add padding for mobile responsiveness */
+    background: linear-gradient(to top, #e6b980 0%, #eacda3 100%);
+}
+
+/* Logo styling */
+.logo {
+    max-width: 150px; /* Adjust the size of the logo */
+    display: block;
+    margin: 0 auto; /* Center the logo */
+}
+
+/* Category card styling */
+.category-card {
+    background-color: #fff;
+    border-radius: 15px; /* Rounded corners */
+    overflow: hidden; /* Ensure the image does not overflow the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Card shadow */
+    margin-bottom: 20px; /* Space between cards */
+}
+
+/* Card image styling */
+.category-card img {
+    width: 100%;
+    height: 200px; /* Fixed height for the image */
+    object-fit: cover; /* Ensure the image covers the card without distortion */
+}
+
+/* Card text styling */
+.category-card a {
+    display: block; /* Make the entire link area clickable */
+    text-decoration: none; /* Remove underline from links */
+    color: inherit; /* Inherit color from parent */
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+    padding: 10px;
+    background-color: #f8f9fa; /* Light background for the text */
+    text-align: center;
+}
+
+/* Navbar styling */
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: top 0.3s;
+    z-index: 1000; /* Ensure it sits above other content */
+    display: none; /* Hide by default */
+    transition: 1s ease all;
+}
+
+/* Navbar visible state */
+#navbar.show {
+    display: block;
+    transition: 1s ease all;
+}
+
+/* Button styling */
+.btn-primary {
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+/* Hover effect for buttons */
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.navbar-brand{
+    font-family: sans-serif;
+}
+
+/* Footer styling */
+.footer {
+    background-color: #f8f9fa; /* Light background color for contrast */
+    padding: 20px 0; /* Vertical padding for spacing */
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Shadow for subtle depth */
+    color: #333; /* Dark text color */
+    text-align: center; /* Center align text */
+}
+
+.footer .container {
+    max-width: 600px; /* Match the container width */
+    margin: auto; /* Center the footer content */
+    padding: 0 15px; /* Add padding on mobile */
+    background: transparent; /* Ensure no background color */
+}
+
+.footer p {
+    margin: 5px 0; /* Margin for spacing between lines */
+    font-size: 14px; /* Font size */
+    color: #666; /* Slightly lighter color for text */
+}
+
+.footer p:first-of-type {
+    font-weight: bold; /* Bold the copyright text */
+}
