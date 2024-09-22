@@ -107,3 +107,54 @@
 .footer p:first-of-type {
     font-weight: bold; /* Bold the copyright text */
 }
+
+/* Popup Overlay */
+.popup-overlay {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+    z-index: 1000; /* Sit on top */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Popup Content */
+.popup-content {
+    background: white;
+    padding: 0; /* No padding */
+    border-radius: 5px;
+    text-align: center;
+    width: 80%;
+    max-width: 500px;
+    position: relative; /* For positioning close button */
+}
+
+/* Popup Image */
+.popup-image {
+    width: 100%; /* Responsive width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Optional: rounded corners */
+}
+/* Close Button */
+.close-btn {
+    position: absolute;
+    top: 10px; /* Adjusted to ensure it doesn't overlap with other content */
+    right: 10px; /* Adjusted to ensure it doesn't overlap with other content */
+    font-size: 24px;
+    cursor: pointer;
+    color: #ffffff; /* White text color for contrast */
+    background-color: #ac0000; /* Red background color */
+    border-radius: 50%; /* Circular shape */
+    width: 35px; /* Button width */
+    height: 35px; /* Button height */
+    display: flex; /* Center the text */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    z-index: 1001; /* Ensure the close button is on top */
+    border: 2px solid #ac0000; /* Optional: border to enhance visibility */
+    font-family: Arial, sans-serif; /* Ensure consistent font rendering */
+}

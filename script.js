@@ -10,3 +10,21 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    // Show the popup immediately when the page loads
+    document.getElementById('popupOffer').style.display = 'flex';
+
+    // Close the popup when the close button is clicked
+    document.getElementById('closePopup').addEventListener('click', function () {
+        document.getElementById('popupOffer').style.display = 'none';
+    });
+
+    // Optional: Close the popup if clicking outside of it
+    document.getElementById('popupOffer').addEventListener('click', function (e) {
+        if (e.target === this) {
+            this.style.display = 'none';
+        }
+    });
+});
