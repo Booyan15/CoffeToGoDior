@@ -1,3 +1,30 @@
+/* Reset margin and padding for the entire page */
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Ensure no blank space at the top */
+header {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar should start at the top without space */
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure it sits above other content */
+    margin: 0; /* Remove any margin */
+    padding: 0; /* Remove any padding */
+    display: none; /* Hide by default */
+    transition: 1s ease all;
+}
+
+
+
 /* General container styling */
 .container {
     max-width: 600px; /* Limit the width of the container */
@@ -45,16 +72,6 @@
     text-align: center;
 }
 
-/* Navbar styling */
-#navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    transition: top 0.3s;
-    z-index: 1000; /* Ensure it sits above other content */
-    display: none; /* Hide by default */
-    transition: 1s ease all;
-}
 
 /* Navbar visible state */
 #navbar.show {
