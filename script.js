@@ -13,15 +13,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 document.addEventListener('DOMContentLoaded', function () {
-    // Function to show popup
-    function showPopup() {
-        const popupShown = localStorage.getItem('popupShown');
-        // Show the popup if it hasn't been shown before
-        if (!popupShown) {
-            document.getElementById('popupOffer').style.display = 'flex';
-            localStorage.setItem('popupShown', 'true');
-        }
-    }
+    // Show the popup immediately when the page loads
+    document.getElementById('popupOffer').style.display = 'flex';
 
     // Close the popup when the close button is clicked
     document.getElementById('closePopup').addEventListener('click', function () {
@@ -34,10 +27,4 @@ document.addEventListener('DOMContentLoaded', function () {
             this.style.display = 'none';
         }
     });
-
-    // Detect if the page was loaded via refresh or direct navigation
-    if (performance.navigation.type === 1 || performance.navigation.type === 0) {
-        // If the page was loaded via refresh or direct navigation (not via back button)
-        showPopup();
-    }
 });
