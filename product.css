@@ -39,11 +39,11 @@
     color: #333; /* Change text color if needed */
 }
 
-/* Style for the product description */
-.card .text p {
-    font-size: 14px;
-    margin: 5px 0 0; /* Margin for spacing */
-    color: #666; /* Change text color if needed */
+/* Style for the product price */
+.card .text .price {
+    font-size: 16px;
+    margin-top: 5px;
+    color: rgb(51, 51, 51); /* Bold text color */
 }
 
 /* Style for the back button */

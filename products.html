@@ -30,28 +30,13 @@ document.addEventListener("DOMContentLoaded", function() {
     const products = [
         // Coffee
         [
-            { "name": "Espresso", "price": "100", "description": "Strong and bold coffee with a rich flavor.", "image": "images/coffes/espreso.png" },
-            { "name": "Latte", "price": "120", "description": "Smooth coffee with steamed milk and a touch of cream.", "image": "images/coffes/late.png" },
-            { "name": "Latte", "price": "120", "description": "Smooth coffee with steamed milk and a touch of cream.", "image": "images/coffes/late.png" },
-            { "name": "Latte", "price": "120", "description": "Smooth coffee with steamed milk and a touch of cream.", "image": "images/coffes/late.png" },
-            { "name": "Latte", "price": "120", "description": "Smooth coffee with steamed milk and a touch of cream.", "image": "images/coffes/late.png" },
-            { "name": "Latte", "price": "120", "description": "Smooth coffee with steamed milk and a touch of cream.", "image": "images/coffes/late.png" },
-
+            { "name": "Espresso", "price": "100", "image": "images/coffes/espreso.png" },
+            { "name": "Latte", "price": "120", "image": "images/coffes/late.png" }
         ],
         // Soft Drinks
         [
-            { "name": "Pepsi", "price": "120", "description": "Classic cola with a refreshing taste.", "image": "images/coffes/late.png" },
-            { "name": "Water", "price": "80", "description": "Pure and clean water.", "image": "images/water.jpg" }
-        ],
-        // Beer
-        [
-            { "name": "Corona", "price": "250", "description": "Light and crisp beer with a hint of citrus.", "image": "images/corona.jpg" },
-            { "name": "Budweiser", "price": "200", "description": "Smooth beer with a balanced flavor.", "image": "images/budweiser.jpg" }
-        ],
-        // Wines
-        [
-            { "name": "Chardonnay", "price": "1400", "description": "Rich and creamy white wine with notes of vanilla.", "image": "images/chardonnay.jpg" },
-            { "name": "Merlot", "price": "1500", "description": "Smooth red wine with flavors of plum and berries.", "image": "images/merlot.jpg" }
+            { "name": "Pepsi", "price": "120", "image": "images/coffes/late.png" },
+            { "name": "Water", "price": "80", "image": "images/water.jpg" }
         ]
     ];
 
@@ -71,12 +56,13 @@ document.addEventListener("DOMContentLoaded", function() {
             <img src="${product.image}" alt="${product.name}">
             <div class="text">
                 <h3>${product.name}</h3>
-                <p>${product.description}</p>
+                <p class="price"><strong>${product.price} ден</strong></p>
             </div>
         `;
         productListElement.appendChild(productCard);
     });
 });
+
 
     </script>
 </body>
